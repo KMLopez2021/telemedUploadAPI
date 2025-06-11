@@ -23,9 +23,9 @@ class ConvertWebmToMp4 implements ShouldQueue
 
     public function handle()
     {
-        $ffmpegCmd = 'ffmpeg -y -i "' . $this->webmPath . '" -c:v libx264 -preset fast -crf 23 -c:a aac -b:a 128k "' . $this->mp4Path . '"';
-        exec($ffmpegCmd);
-        // Delete the webm file only if mp4 was created
+       $ffmpegCmd = 'ffmpeg -y -i "' . $this->webmPath . '" -c:v libx264 -preset fast -crf 23 -c:a aac -b:a 128k "' . $this->mp4Path . '" 2>&1';
+        exec($ffmpegCmd, $output, $returnVar);
+       // Delete the webm file only if mp4 was created
         if (file_exists($this->mp4Path) && file_exists($this->webmPath)) {
             @unlink($this->webmPath);
         }
