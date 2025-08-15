@@ -63,7 +63,7 @@ class ApiController extends Controller
                     }
                 }
                 if (!$missing) {
-                    $finalDir = storage_path('app/public/screen_recordings/' . $username);
+                    $finalDir = storage_path('app/public/screen_recordings/' . $username . '/' . date('M j, Y'));
                     $finalPath = $finalDir . '/' . $fileName;
                     if (!is_dir($finalDir)) {
                         mkdir($finalDir, 0777, true);
