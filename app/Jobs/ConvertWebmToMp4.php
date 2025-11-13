@@ -45,22 +45,14 @@ class ConvertWebmToMp4 implements ShouldQueue
 
         $ffmpegCmd = 'ffmpeg -y -i "' . $this->webmPath . '" -c:v libx264 -preset fast -crf 23 -c:a aac -b:a 128k "' . $mp4OutputPath . '" 2>&1';
 
-        try {
-            exec($ffmpegCmd, $output, $returnVar);
+        exec($ffmpegCmd, $output, $returnVar);
 
-            if ($returnVar !== 0) {
-                \Log::error('FFmpeg failed', [
-                    'cmd' => $ffmpegCmd,
-                    'output' => $output,
-                    'exit_code' => $returnVar,
-                ]);
-                throw new \Exception('FFmpeg conversion failed');
-            }
-        } finally {
-            // Always attempt to delete the webm file, even if conversion fails
-            if (file_exists($this->webmPath)) {
-                @unlink($this->webmPath);
-            }
+        if ($returnVar !== 0) {
+            throw new \Exception("FFmpeg conversion failed, exit code: $returnVar");
+        }
+
+        if (file_exists($this->webmPath)) {
+            @unlink($this->webmPath);
         }
     }
 }

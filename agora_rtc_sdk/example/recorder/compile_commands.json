@@ -1,0 +1,42 @@
+[
+{
+  "directory": "/var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder/recorder",
+  "command": "/usr/bin/cc  -I/var/www/telemedUploadAPI/agora_rtc_sdk/example -I/var/www/telemedUploadAPI/agora_rtc_sdk/example/../agora_sdk/include -I/var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder -I/var/www/telemedUploadAPI/agora_rtc_sdk/agora_sdk/include  -o CMakeFiles/sample_recorder.dir/parser/cJSON.o -c /var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder/parser/cJSON.c",
+  "file": "/var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder/parser/cJSON.c"
+},
+{
+  "directory": "/var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder/recorder",
+  "command": "/usr/bin/c++  -I/var/www/telemedUploadAPI/agora_rtc_sdk/example -I/var/www/telemedUploadAPI/agora_rtc_sdk/example/../agora_sdk/include -I/var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder -I/var/www/telemedUploadAPI/agora_rtc_sdk/agora_sdk/include  -DTARGET_OS_LINUX -fno-omit-frame-pointer -Wno-unused-command-line-argument  -o CMakeFiles/sample_recorder.dir/parser/parser.o -c /var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder/parser/parser.cpp",
+  "file": "/var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder/parser/parser.cpp"
+},
+{
+  "directory": "/var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder/recorder",
+  "command": "/usr/bin/c++  -I/var/www/telemedUploadAPI/agora_rtc_sdk/example -I/var/www/telemedUploadAPI/agora_rtc_sdk/example/../agora_sdk/include -I/var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder -I/var/www/telemedUploadAPI/agora_rtc_sdk/agora_sdk/include  -DTARGET_OS_LINUX -fno-omit-frame-pointer -Wno-unused-command-line-argument  -o CMakeFiles/sample_recorder.dir/recorderEventHandler.o -c /var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder/recorderEventHandler.cpp",
+  "file": "/var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder/recorderEventHandler.cpp"
+},
+{
+  "directory": "/var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder/recorder",
+  "command": "/usr/bin/c++  -I/var/www/telemedUploadAPI/agora_rtc_sdk/example -I/var/www/telemedUploadAPI/agora_rtc_sdk/example/../agora_sdk/include -I/var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder -I/var/www/telemedUploadAPI/agora_rtc_sdk/agora_sdk/include  -DTARGET_OS_LINUX -fno-omit-frame-pointer -Wno-unused-command-line-argument  -o CMakeFiles/sample_recorder.dir/sample_recorder.o -c /var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder/sample_recorder.cpp",
+  "file": "/var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder/sample_recorder.cpp"
+},
+{
+  "directory": "/var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder/recorder_local",
+  "command": "/usr/bin/c++  -I/var/www/telemedUploadAPI/agora_rtc_sdk/example -I/var/www/telemedUploadAPI/agora_rtc_sdk/example/../agora_sdk/include -I/var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder_local  -DTARGET_OS_LINUX -fno-omit-frame-pointer -Wno-unused-command-line-argument  -o CMakeFiles/recorder_local.dir/main.o -c /var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder_local/main.cpp",
+  "file": "/var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder_local/main.cpp"
+},
+{
+  "directory": "/var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder/recorder_local",
+  "command": "/usr/bin/c++  -I/var/www/telemedUploadAPI/agora_rtc_sdk/example -I/var/www/telemedUploadAPI/agora_rtc_sdk/example/../agora_sdk/include -I/var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder_local  -DTARGET_OS_LINUX -fno-omit-frame-pointer -Wno-unused-command-line-argument  -o CMakeFiles/recorder_local.dir/opt_parser.o -c /var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder_local/opt_parser.cpp",
+  "file": "/var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder_local/opt_parser.cpp"
+},
+{
+  "directory": "/var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder/recorder_local",
+  "command": "/usr/bin/c++  -I/var/www/telemedUploadAPI/agora_rtc_sdk/example -I/var/www/telemedUploadAPI/agora_rtc_sdk/example/../agora_sdk/include -I/var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder_local  -DTARGET_OS_LINUX -fno-omit-frame-pointer -Wno-unused-command-line-argument  -o CMakeFiles/recorder_local.dir/recorderEventHandler.o -c /var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder_local/recorderEventHandler.cpp",
+  "file": "/var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder_local/recorderEventHandler.cpp"
+},
+{
+  "directory": "/var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder/recorder_local",
+  "command": "/usr/bin/c++  -I/var/www/telemedUploadAPI/agora_rtc_sdk/example -I/var/www/telemedUploadAPI/agora_rtc_sdk/example/../agora_sdk/include -I/var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder_local  -DTARGET_OS_LINUX -fno-omit-frame-pointer -Wno-unused-command-line-argument  -o CMakeFiles/recorder_local.dir/time_util.o -c /var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder_local/time_util.cpp",
+  "file": "/var/www/telemedUploadAPI/agora_rtc_sdk/example/recorder_local/time_util.cpp"
+}
+]
