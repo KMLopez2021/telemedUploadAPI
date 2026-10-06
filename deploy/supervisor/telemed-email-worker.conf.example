@@ -1,0 +1,15 @@
+[program:telemed-email-worker]
+process_name=%(program_name)s_%(process_num)02d
+command=/usr/bin/php /var/www/telemedUploadAPI/artisan queue:work database --queue=appointment-emails --sleep=3 --tries=5 --timeout=60
+directory=/var/www/telemedUploadAPI
+user=www-data
+numprocs=1
+autostart=true
+autorestart=true
+stopasgroup=true
+killasgroup=true
+stopwaitsecs=70
+redirect_stderr=true
+stdout_logfile=/var/log/supervisor/telemed-email-worker.log
+stdout_logfile_maxbytes=10MB
+stdout_logfile_backups=5
